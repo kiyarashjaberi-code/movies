@@ -16,3 +16,5 @@ def get_links():
         for link in file_links:
             links.append(link.text)
     return links
+link=get_links()
+print(link[10])
