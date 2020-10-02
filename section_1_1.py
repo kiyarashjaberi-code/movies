@@ -1,4 +1,10 @@
 from bs4 import BeautifulSoup
+def read_file_utf8(file_name):
+    """a function to open & read files as utf-8 and return data as a string"""
+    text_file = open(file_name)
+    data = text_file.read()
+    text_file.close()
+    return data
 def read_file(file_name):
     """a function to open & read files and return data as a string"""
     text_file = open(file_name)
